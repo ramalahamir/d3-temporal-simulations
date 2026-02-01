@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gapminder: Wealth & Health of Nations</title>
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Wealth & Health of Nations</h1>
+        <p>Explore the correlation between GDP and Life Expectancy across two centuries</p>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <!-- Top Row: Motion Chart + Choropleth Map -->
+        <div class="top-row">
+            <div class="chart-card">
+                <h2>Motion Chart</h2>
+                <div id="motion-chart-container"></div>
+                
+                <!-- Controls -->
+                <div class="controls">
+                    <button id="play-pause-btn">▶ Play</button>
+                    <div class="slider-container">
+                        <label>Year: <span id="year-display">1800</span></label>
+                        <svg id="year-slider"></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>World Life Expectancy</h2>
+                <div id="choropleth-container"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Hierarchy Chart -->
+        <div class="bottom-row">
+            <div class="chart-card">
+                <h2>Regional Breakdown</h2>
+                <div id="hierarchy-container"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="scripts/main.js"></script>
+
+</body>
+</html>

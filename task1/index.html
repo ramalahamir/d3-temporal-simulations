@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Energy Dashboard</title>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Global Energy Capacity & Fuel Mix</h1>
+        <p>Zoom in to see individual power plants. Hover to see details.</p>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <div class="top-row">
+            
+            <div id="map-container"></div>
+
+            <div id="force-container"></div>
+        </div>
+
+        <div class="bottom-row">
+            <div id="timeline-container"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+
+</body>
+</html>
